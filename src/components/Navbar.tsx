@@ -20,11 +20,6 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 backdrop-blur bg-white/80 shadow-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo / Home */}
-          <Link href="/" className="text-2xl font-extrabold text-blue-600">
-            MySite
-          </Link>
-
           {/* Nav links (desktop) */}
           <div className="hidden md:flex space-x-8">
             {links.map(({ href, label }) => {
