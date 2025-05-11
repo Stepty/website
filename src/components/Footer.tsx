@@ -11,7 +11,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="mt-16 border-t pt-8 pb-6 bg-gray-50">
+    <footer className="border-t pt-8 pb-6 bg-blue-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
         <p className="text-gray-600 text-sm mb-4 md:mb-0">
           © {new Date().getFullYear()} Stephen Ni. All rights reserved.

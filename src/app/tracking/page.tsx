@@ -1,7 +1,13 @@
-export default function Tracking() {
+// app/tracking/page.tsx
+import GymCalendar from '@/components/GymCalendar';
+import RunningCalendar from '@/components/RunningCalendar';
+
+export default function TrackingPage() {
   return (
-    <article className="prose mx-auto p-4">
-      <h1>Tracking</h1>
-    </article>
+    <main className="p-6">
+      <h1 className="text-3xl font-bold mb-4">Running Tracker</h1>
+      <RunningCalendar />
+      <GymCalendar />
+    </main>
   );
 }

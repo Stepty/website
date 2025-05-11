@@ -17,7 +17,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur bg-white/80 shadow-md">
+    <nav className="sticky top-0 z-50 backdrop-blur bg-blue-100/80 shadow-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Nav links (desktop) */}
