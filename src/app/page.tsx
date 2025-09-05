@@ -10,7 +10,7 @@ export default async function Home() {
   const latest = posts.slice(0, 2);
 
   return (
-    <main className="h-screen w-screen bg-gradient-to-l from-gray-200 via-fuchsia-200 to-stone-100 flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-white">
+    <main className="h-screen w-screen flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-white">
       
       {/* Hero */}
       <section className="text-center max-w-2xl bg-white/15 p-10 border rounded-lg shadow-lg">

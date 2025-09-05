@@ -25,6 +25,7 @@ export async function getPostBySlug(slug: string) {
     metadata: {
       title: data.title as string,
       date: data.date as string,
+      category: data.category as string
     },
     contentHtml,
   }
@@ -35,4 +36,15 @@ export async function getAllPosts() {
   const posts = await Promise.all(slugs.map(getPostBySlug))
   // sort by date desc
   return posts.sort((a, b) => (a.metadata.date < b.metadata.date ? 1 : -1))
+}
+
+export async function getAllCategories() {
+  const posts = await getAllPosts()
+  const categories = Array.from(new Set(posts.map((p) => p.metadata.category)))
+  return categories
+}
+
+export async function getPostsByCategory(category: string) {
+  const posts = await getAllPosts()
+  return posts.filter((p) => p.metadata.category === category)
 }
